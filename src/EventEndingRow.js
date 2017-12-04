@@ -90,14 +90,13 @@ class EventEndingRow extends React.Component {
     let count = eventsInSlot(segments, slot)
 
     return count
-      ? <a
+      ? <button
           key={'sm_' + slot}
-          href="#"
-          className={'rbc-show-more'}
+          className="rbc-link rbc-show-more"
           onClick={e => this.showMore(slot, e)}
         >
           {messages.showMore(count)}
-        </a>
+        </button>
       : false
   }
 

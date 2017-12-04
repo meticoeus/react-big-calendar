@@ -315,12 +315,12 @@ export default class TimeGrid extends Component {
           style={segStyle(1, this.slots)}
         >
           {drilldownView ? (
-            <a
-              href='#'
+            <button
+              className="rbc-link"
               onClick={e => this.handleHeaderClick(date, drilldownView, e)}
             >
               {header}
-            </a>
+            </button>
           ) : (
             <span>
               {header}
